@@ -92,3 +92,6 @@ sudo systemctl reboot
 ## Other things to explore
 - [Basic Guid](https://github.com/SirSnolte/Docker/blob/main/README.md)
 - [NGINX Guid](https://github.com/SirSnolte/Docker/blob/main/etc/nginx-pm_cloudflare-tunnel/install_nginx_manager_with_cloudflare_tunnel_SSL-approved.md)
+
+
+<a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
