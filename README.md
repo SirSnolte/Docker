@@ -1,11 +1,13 @@
 # Guide for: Docker Portainer.io Cloudflare.com Argo Tunnel (SSL + DDOS Porection)
 ### Basic instructions *Something for Debian*
 
-If you are starting a project from scratch you will need Debian 10 or something like this.
-Please make sure you removed your old docker files & stay up to date:
-```
-apt update && apt upgrade -V && apt dist-upgrade && apt autoremove
-```
+If you are starting a project from scratch you will need Debian 10 or something like this to get all these stuff working.
+For VServer we prefere a fresh clean Debian 10 like in this guide.
+
+
+##Get started
+
+Always stay up to date:
 ```
 sudo apt-get update
 ```
@@ -48,6 +50,11 @@ or
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Installation Docker
+
+Please make sure you removed your old docker files & stay up to date:
+```
+apt update && apt upgrade -V && apt dist-upgrade && apt autoremove
+```
 
 Now we are ready to go lets install docker.
 First of all we need to download docker and then install docker enigne.
