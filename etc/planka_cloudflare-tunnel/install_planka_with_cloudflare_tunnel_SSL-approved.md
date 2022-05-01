@@ -65,6 +65,7 @@ volumes:
 Now deploy this type of code
 
 - like: https://www.youtube.com/watch?v=acC1Nk5qSA0
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
 
