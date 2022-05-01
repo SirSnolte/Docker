@@ -121,17 +121,17 @@ sudo systemctl reboot
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
+### Docker Cloudflare Zero Trust Tunnel (free to use but credit card needed)
 
 First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
 Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
-If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
+  
+
+### Get started
+If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel, but easy via gui.
 ![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
-There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.  
+There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.
 
-You can add:
-
-```--restart=always```
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
