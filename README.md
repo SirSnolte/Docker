@@ -20,7 +20,6 @@ sudo apt-get install \
     lsb-release
 ```
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### UncomplicatedFireWall
 
 Maybe you should install and use a firewall to protect some ports:
