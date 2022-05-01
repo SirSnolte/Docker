@@ -1,5 +1,5 @@
 # Installation of NGINX Proxy Manager with approved SSL-Certificate by Cloudflare Argo Tunnel 
-Befor you can doing this, you need to complete the first Guide: [Main Guid](sss) already done? Go a head.
+Befor you can doing this, you need to complete the first Guide: [Main Guid](https://github.com/SirSnolte/Docker/blob/main/README.md) already done? Go a head.
 
 ### Run NGINX PM  by Portainer Stack:
 
@@ -44,6 +44,9 @@ services:
       - ./data/mysql:/var/lib/mysql
 ```
 
+Like this:
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/portainer_stack.png)
+Push deploy.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
@@ -51,7 +54,7 @@ services:
 First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
 Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
 If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
-![alt text](https://github.com/SirSnolte/debian_docker_portainer_NGINX_letsencrypt/blob/main/etc/cloudflare_zerotrust.png)
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.  
 
  more is coming soon
@@ -62,13 +65,13 @@ There we can generate Docker code by creating a new Tunnel. Just copy and run in
 sudo systemctl reboot
 ```
 
-## Things we use in this guid
+## Things we use in this guide
 - [NGINX Proxy Manager](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) 
 - [Cloudflare](https://dash.cloudflare.com/)
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
 
 ## Other things to explore
-- [Basic Guid](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database)
-- [Planka Guid](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database)
+- [Basic Guide](https://github.com/SirSnolte/Docker/blob/main/README.md)
+- [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
 

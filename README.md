@@ -126,44 +126,28 @@ sudo systemctl reboot
 First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
 Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
 If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
-![alt text](https://github.com/SirSnolte/debian_docker_portainer_NGINX_letsencrypt/blob/main/etc/cloudflare_zerotrust.png)
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.  
 
 You can add:
 
 ```--restart=always```
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Issue Template
-
-Issue templates benefit developers and any other team members who may be performing QA or developing project requirements.
-
-These markdown files prepopulate new Issues filed on github. When a team member files an issue, they are given different prompts based on what type of issue they are creating. For example, a Bug issue template may include steps to reproduce, and a CMS template may include optional vs. required fields.
-
-You can create as many issue templates as you want. They live in the `/.github/ISSUES` directory.
-
-Each issue template needs to start with this markup:
-
-```
----
-name: Issue Type
-about: Further description of this category.
----
-```
-
-This frontmatter will be used to populate the Issue Picker UI in Github.
-
-## usefull commands
+## Usefull commands
 
 ```
 sudo systemctl reboot
 ```
 
-## Other things to explore
-
+## Things we use in this guide
 - [Docker](https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=search_emea_brand&utm_term=docker_exact)
 - [Portainer](https://www.portainer.io)
 - [Cloudflare](https://dash.cloudflare.com/)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/)
-- [NGINX Proxy Manager](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database)
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
-
+  
+## Other things to explore
+- [Proxy Manager Guide](https://github.com/SirSnolte/Docker/blob/main/etc/nginx-pm_cloudflare-tunnel/install_nginx_manager_with_cloudflare_tunnel_SSL-approved.md)
+- [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
