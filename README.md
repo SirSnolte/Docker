@@ -147,7 +147,7 @@ It works perfectly fine with Planka: - [Planka Guide](https://github.com/SirSnol
 sudo systemctl reboot
 ```
 
-
+## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 
