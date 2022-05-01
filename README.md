@@ -147,14 +147,16 @@ It works perfectly fine with Planka: - [Planka Guide](https://github.com/SirSnol
 sudo systemctl reboot
 ```
 
+
+<a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+
 ## Things we use in this guide
 - [Docker](https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=search_emea_brand&utm_term=docker_exact)
 - [Portainer](https://www.portainer.io)
 - [Cloudflare](https://dash.cloudflare.com/)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/)
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
-  
-<a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Other things to explore
 - [Proxy Manager Guide](https://github.com/SirSnolte/Docker/blob/main/etc/nginx-pm_cloudflare-tunnel/install_nginx_manager_with_cloudflare_tunnel_SSL-approved.md)

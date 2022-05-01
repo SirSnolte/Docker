@@ -65,13 +65,15 @@ There we can generate Docker code by creating a new Tunnel. Just copy and run in
 sudo systemctl reboot
 ```
 
+
+<a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+
 ## Things we use in this guide
 - [NGINX Proxy Manager](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) 
 - [Cloudflare](https://dash.cloudflare.com/)
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
-
-<a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Other things to explore
 - [Basic Guide](https://github.com/SirSnolte/Docker/blob/main/README.md)
