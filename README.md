@@ -141,7 +141,8 @@ It works perfectly fine with Planka: - [Planka Guide](https://github.com/SirSnol
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Usefull commands
+
+## Usefull commands:
 
 ```
 sudo systemctl reboot
