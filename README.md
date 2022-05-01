@@ -85,31 +85,31 @@ sudo systemctl reboot
 
 Choose the one variant, the first one is the basic Opencource Edition.
 
-#### Add Portainer as an Container to Docker *Community Version (CE)*
-
-Pull your version of Portainer:
-```
-docker pull portainer/portainer-ce:2.11.1
-```
-
-Roll out Portainer docker container:
-```
-docker run -d -p 8000:8000 -p 9443:9000 -p --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.11.1
-```
+> #### Add Portainer as an Container to Docker *Community Version (CE)*
+>
+> Pull your version of Portainer:
+> ```
+> docker pull portainer/portainer-ce:2.11.1
+> ```
+>
+> Roll out Portainer docker container:
+> ```
+> docker run -d -p 8000:8000 -p 9443:9000 -p --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.11.1
+> ```
 or
 
-#### Add Portainer as an Container to Docker *Portainer Business Version (EE)*
-Before you can use the business version of Portainer, you should have a license key. you can get it here: 
-[Get Portainer Business Edition for free](https://www.portainer.io/pricing/take5)
-Pull your version of Portainer:
-```
-docker pull portainer/portainer-ee:latest
-```
-
-Roll out Portainer docker container:
-```
-docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
-```
+> #### Add Portainer as an Container to Docker *Portainer Business Version (EE)*
+> Before you can use the business version of Portainer, you should have a license key. you can get it here: 
+> [Get Portainer Business Edition for free](https://www.portainer.io/pricing/take5)
+> Pull your version of Portainer:
+> ```
+> docker pull portainer/portainer-ee:latest
+> ```
+>
+> Roll out Portainer docker container:
+> ```
+> docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
+> ```
 
 
 Now lean back and wait for some time try to connect to Portainer: https://localhost:9443/ 
