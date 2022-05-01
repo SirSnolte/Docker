@@ -3,7 +3,17 @@ Befor you can doing this, you need to complete the first Guide: [Main Guid](http
 
 ### Run Planka by Portainer Stack:
 
-Go to your Portainer GUI click on Stack and deploy this type of code:
+Go to your Portainer GUI click on Stack:
+Like this:
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/portainer_stack.png)
+
+First create in your local terminal an secretkey:
+
+```
+openssl rand -hex 64
+```
+Copy that and replace in this Stack:
+Also make sure you set your BASE_URL right.
 
 ```
 version: '3'
@@ -30,7 +40,7 @@ services:
       - BASE_URL=http://172.19.0.3
       - TRUST_PROXY=0
       - DATABASE_URL=postgresql://postgres@postgres/planka
-      - SECRET_KEY=e51eb28e32f94589852b104b9223a1a35046cb8a9d0ee6fec967d49068c8c0185512c1e648b9336eb9685fa9779d3afb330a73567beb35a7d401d42e106dc3d3
+      - SECRET_KEY=EDITME
 
     depends_on:
       - postgres
@@ -51,9 +61,10 @@ volumes:
   db-data:
 
 ```
-Like this:
-![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/portainer_stack.png)
-Push deploy.
+
+Now deploy this type of code
+
+- like: https://www.youtube.com/watch?v=acC1Nk5qSA0
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
 
