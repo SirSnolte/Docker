@@ -121,13 +121,13 @@ sudo systemctl reboot
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Docker Cloudflare Zero Trust Tunnel (free to use but credit card needed)
+### Cloudflare change your Domain nameserver *free SSL+DDOS-Protection*
 
 First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
 Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
   
 
-### Get started
+### Docker Cloudflare Zero Trust Tunnel (free to use but credit card needed)
 If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel, but easy via gui.
 ![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.
