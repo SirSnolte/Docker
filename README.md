@@ -5,7 +5,7 @@ If you are starting a project from scratch you will need Debian 10 or something 
 For VServer we prefere a fresh clean Debian 10 like in this guide.
 
 
-##Get started
+## Get started
 
 Always stay up to date:
 ```
