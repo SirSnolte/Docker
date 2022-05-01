@@ -1,5 +1,4 @@
 # Basic installation for Docker in combination with Portainer.io and Cloudflare.com Tunnel  *in few minutes*
-#### #ZeroToHero 
 ### Basic instructions *Something for Debian*
 
 
@@ -133,7 +132,7 @@ If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) 
 
 For now you cant set an argo tunnel on portainer. 
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.
-But Planka: - [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
+It works perfectly fine with Planka: - [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
