@@ -1,6 +1,4 @@
 # Guide for: Docker Portainer.io Cloudflare.com Argo Tunnel (SSL + DDOS Porection)
-*in few minutes*
-
 ### Basic instructions *Something for Debian*
 
 If you are starting a project from scratch you will need Debian 10 or something like this.
