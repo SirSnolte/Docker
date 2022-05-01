@@ -64,6 +64,8 @@ volumes:
 
 Now deploy this type of code
 
+Login with: demo@demo.demo demo
+
 - like: https://www.youtube.com/watch?v=acC1Nk5qSA0
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
