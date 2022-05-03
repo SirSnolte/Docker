@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  planka:
+    image: ghcr.io/plankanban/planka:latest
+    command: >
+      bash -c
+        "for i in `seq 1 30`; do
+          ./start.sh &&
+          s=$$? && break || s=$$?;
+          echo \"Tried $$i times. Waiting 5 seconds...\";
+          sleep 5;
+        done; (exit $$s)"
+    restart: unless-stopped
+    volumes:
+      - user-avatars:/app/public/user-avatars
+      - project-background-images:/app/public/project-background-images
+      - attachments:/app/private/attachments
+    environment:
+      - BASE_URL=http://localhost:3000
+      - TRUST_PROXY=0
+      - DATABASE_URL=postgresql://postgres@postgres/planka
+      - SECRET_KEY=42d202e09b2a4c75e7eb7aa1e25f4a49f3288a63099d562a8fb802123d5a7beca6381affd8c2c7e81b0e7c96943fa8d082c7cf0a6c64ae0d7d528dee2ea5334a
+      - network=hera 
+      - hera.hostname=https://planka.ampera.dev 
+      - hera.port=3000
+      - DATABASE_URL=postgresql://postgres@postgres/planka
+      
+      
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:alpine
+    restart: unless-stopped
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=planka
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+volumes:
+  user-avatars:
+  project-background-images:
+  attachments:
+  db-data:
