@@ -157,4 +157,4 @@ services:
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
 
 ## Other things to explore
-- [Basic Guid](https://github.com/SirSnolte/Docker/blob/main/README.md)
+- [Basic Guide](https://github.com/SirSnolte/Docker/blob/main/README.md)
