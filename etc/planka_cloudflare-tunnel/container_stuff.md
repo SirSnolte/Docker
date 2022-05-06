@@ -113,15 +113,7 @@ Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your C
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
 
-Http ERROR
-Https proxy Tunnel with planka = endless planka loading screen 
-
-reasons:
-- secret_key: hex 64 hash?
-- allow_proxy: 0/1?
-- no cloudflare ssl certificates installed?
-
-
+Works Fine
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -145,6 +137,12 @@ services:
       - 443:443
     restart: unless-stopped
 ```
+Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
+Create a Network and add your tunnel in it.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+
+Works Fine
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
