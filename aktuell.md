@@ -125,8 +125,8 @@ Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account ve
   
 
 ### Docker Cloudflare Zero Trust Tunnel (free to use but credit card needed)
-If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel, but easy via gui.
+If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com Tunnel, but easy via gui.
 ![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 
-For now you cant set an argo tunnel on portainer. 
+For now you cant set an tunnel on portainer. 
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.
