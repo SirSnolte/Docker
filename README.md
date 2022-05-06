@@ -163,6 +163,5 @@ sudo systemctl reboot
 - [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
 
 ## Other things to explore
-- [Proxy Manager Guide](https://github.com/SirSnolte/Docker/blob/main/etc/nginx-pm_cloudflare-tunnel/install_nginx_manager_with_cloudflare_tunnel_SSL-approved.md)
-- [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
+- [Container Stuff](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/container_stuff.md)
 
