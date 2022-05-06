@@ -35,7 +35,6 @@ services:
       - attachments:/app/private/attachments
     ports:
       - 3000:1337
-      - 44350:44350
     environment:
       - BASE_URL=http://172.19.0.3
       - TRUST_PROXY=0
