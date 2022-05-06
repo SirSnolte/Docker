@@ -1,7 +1,7 @@
-# Installation of Planka with approved SSL-Certificate by Cloudflare Argo Tunnel 
+# Installation of Planka, Heimdall and LibreSpeed with approved SSL-Certificate by Cloudflare Tunnel 
 Befor you can doing this, you need to complete the first Guide: [Main Guid](https://github.com/SirSnolte/Docker/blob/main/README.md) already done? Go a head.
 
-### Run Planka by Portainer Stack:
+### Run Planka by Portainer Stack (working without SSL Tunnel):
 
 Go to your Portainer GUI click on Stack:
 Like this:
@@ -66,17 +66,11 @@ Now deploy this type of code
 Login with: demo@demo.demo:demo
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
-
-First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
-Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
-If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
-![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
-There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.  
+Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to this network and your tunnel to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
 
+Http ERROR
 Https proxy Tunnel with planka = endless planka loading screen 
 
 reasons:
@@ -86,6 +80,50 @@ reasons:
 
 more coming soon 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Run LibreSpeed via Portainer Stack:
+
+```
+---
+version: "2.1"
+services:
+  librespeed:
+    image: lscr.io/linuxserver/librespeed:latest
+    container_name: librespeed
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - PASSWORD=PASSWORD
+      - CUSTOM_RESULTS=false #optional
+      - DB_TYPE=sqlite #optional
+      - DB_NAME=DB_NAME #optional
+      - DB_HOSTNAME=DB_HOSTNAME #optional
+      - DB_USERNAME=DB_USERNAME #optional
+      - DB_PASSWORD=DB_PASSWORD #optional
+      - DB_PORT=DB_PORT #optional
+    volumes:
+      - /path/to/appdata/config:/config
+    ports:
+      - 81:80
+    restart: unless-stopped
+```
+
+Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
+Create a Network and add your tunnel in it.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+
+Http ERROR
+Https proxy Tunnel with planka = endless planka loading screen 
+
+reasons:
+- secret_key: hex 64 hash?
+- allow_proxy: 0/1?
+- no cloudflare ssl certificates installed?
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
