@@ -1,4 +1,4 @@
-## Get started
+## Get started 🐧
 
 Always stay up to date:
 ```
@@ -41,7 +41,7 @@ or
 - ufw_```default allow```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Installation Docker
+### Installation Docker 🐳
 
 Please make sure you removed your old docker files & stay up to date:
 ```
@@ -56,7 +56,7 @@ Download Docker:
 sudo curl -fsSL https://get.docker.com -o get-docker.sh  
 ```
 
-Run install cmd:
+Run install 🐳:
 ```
 sudo sh get-docker.sh
 ```
@@ -78,11 +78,11 @@ sudo systemctl reboot
 ```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Installation Portainer ```CE/Community Edition``` or ```EE/Business Edition``` 
+### Installation Portainer ```CE/Community Edition``` or ```EE/Business Edition``` 🐳+🚢
 
 Choose the one variant, the first one is the basic Opencource Edition.
 
-> #### Add Portainer as an Container to Docker *Community Version (CE)*
+> #### Add Portainer as an Container to Docker *Community Version (CE)* 🆓
 >
 > Pull your version of Portainer:
 > ```
