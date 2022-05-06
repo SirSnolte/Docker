@@ -53,7 +53,7 @@ First of all we need to download docker and then install docker enigne.
 
 Download Docker:
 ```
-sudo curl -fsSL https://get.docker.com -o get-docker.sh | 
+sudo curl -fsSL https://get.docker.com -o get-docker.sh  
 ```
 
 Run install cmd:
