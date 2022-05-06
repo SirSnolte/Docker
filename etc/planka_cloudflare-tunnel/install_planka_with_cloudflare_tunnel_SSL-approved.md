@@ -35,11 +35,12 @@ services:
       - attachments:/app/private/attachments
     ports:
       - 3000:1337
+
     environment:
-      - BASE_URL=http://172.19.0.3
-      - TRUST_PROXY=0
+      - BASE_URL=http://172.20.0.3
+      - TRUST_PROXY=1
       - DATABASE_URL=postgresql://postgres@postgres/planka
-      - SECRET_KEY=EDITME
+      - SECRET_KEY=3cfb3b8c1c472654267bdf29d294af2066aad57f8e7540662ca9ec6ac468bc152fac640caf03d9cc40a76185e4a2d8357c609b6de1871b2303b834b25653375a
 
     depends_on:
       - postgres
@@ -58,14 +59,12 @@ volumes:
   project-background-images:
   attachments:
   db-data:
-
 ```
 
 Now deploy this type of code
 
-Login with: demo@demo.demo demo
+Login with: demo@demo.demo:demo
 
-- like: https://www.youtube.com/watch?v=acC1Nk5qSA0
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Install via Docker Cloudflare Zero Trust GUI Tunnel (free to use but Credit Card needed)
@@ -75,14 +74,18 @@ Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account ve
 If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 ![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.  
+Create a Network and add your tunnel in it.
+Also make sure to link your container to this network and your tunnel to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
 
- more is coming soon
+Https proxy Tunnel with planka = endless planka loading screen 
+
+reasons:
+- secret_key: hex 64 hash?
+- allow_proxy: 0/1?
+- no cloudflare ssl certificates installed?
+
+more coming soon 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## usefull commands:
-```
-sudo systemctl reboot
-```
 
 ## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
@@ -96,5 +99,3 @@ sudo systemctl reboot
 
 ## Other things to explore
 - [Basic Guid](https://github.com/SirSnolte/Docker/blob/main/README.md)
-- [NGINX Guid](https://github.com/SirSnolte/Docker/blob/main/etc/nginx-pm_cloudflare-tunnel/install_nginx_manager_with_cloudflare_tunnel_SSL-approved.md)
-
