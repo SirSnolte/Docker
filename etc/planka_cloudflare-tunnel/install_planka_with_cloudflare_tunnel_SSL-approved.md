@@ -1,7 +1,7 @@
 # Installation of Planka, Heimdall and LibreSpeed with approved SSL-Certificate by Cloudflare Tunnel 
 Befor you can doing this, you need to complete the first Guide: [Main Guid](https://github.com/SirSnolte/Docker/blob/main/README.md) already done? Go a head.
 
-### Run Planka by Portainer Stack (working without SSL Tunnel):
+### Planka
 
 Go to your Portainer GUI click on Stack:
 Like this:
@@ -81,7 +81,7 @@ reasons:
 more coming soon 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Run LibreSpeed via Portainer Stack:
+### LibreSpeed 
 
 ```
 ---
@@ -124,6 +124,27 @@ reasons:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### Heimdall
+
+```
+---
+version: "2.1"
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - /path/to/appdata/config>:/config
+    ports:
+      - 80:80
+      - 443:443
+    restart: unless-stopped
+```
 
 ## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
