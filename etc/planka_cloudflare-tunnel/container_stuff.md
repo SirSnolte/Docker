@@ -3,10 +3,6 @@ Befor you can doing this, you need to complete the first Guide: [Main Guid](http
 
 ### Planka
 
-Go to your Portainer GUI click on Stack:
-Like this:
-![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/portainer_stack.png)
-
 First create in your local terminal an secretkey:
 
 ```
@@ -111,7 +107,7 @@ services:
 
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.5 linked in Cloudflared and Planka Stack.
 
 Works Fine
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -139,7 +135,7 @@ services:
 ```
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared and Planka Stack.
 
 Works Fine
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
