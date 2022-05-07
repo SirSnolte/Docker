@@ -140,6 +140,22 @@ Also make sure to link your container to your new network and link your tunnel v
 Works Fine
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+#### Jitsi
+
+```
+sudo apt-get update
+ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+ ```
+
+https://docs.docker.com/engine/install/debian/
+
+```
+apt update ; apt install -y build-essential net-tools curl git software-properties-common neofetch apt-transport-https ca-certificates curl gnupg-agent docker.io docker-compose
+
+```
+
+--------------------------
 ## make me smile:
 <a href='https://ko-fi.com/B0B4CGHUO' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
