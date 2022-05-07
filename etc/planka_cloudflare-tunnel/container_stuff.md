@@ -33,7 +33,7 @@ services:
       - 3000:1337
 
     environment:
-      - BASE_URL=http://172.20.0.3
+      - BASE_URL=https://planka.ampera.dev
       - TRUST_PROXY=1
       - DATABASE_URL=postgresql://postgres@postgres/planka
       - SECRET_KEY=3cfb3b8c1c472654267bdf29d294af2066aad57f8e7540662ca9ec6ac468bc152fac640caf03d9cc40a76185e4a2d8357c609b6de1871b2303b834b25653375a
