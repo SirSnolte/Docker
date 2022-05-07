@@ -10,6 +10,7 @@ openssl rand -hex 64
 ```
 Copy that and replace in this Stack:
 Also make sure you set your BASE_URL right.
+Dont put any port in this Stack, the default is 1337
 
 ```
 version: '3'
@@ -29,8 +30,7 @@ services:
       - user-avatars:/app/public/user-avatars
       - project-background-images:/app/public/project-background-images
       - attachments:/app/private/attachments
-    ports:
-      - 3000:1337
+
 
     environment:
       - BASE_URL=https://planka.ampera.dev
@@ -64,7 +64,7 @@ Login with: demo@demo.demo:demo
 
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared and Planka Stack.
 
 Http ERROR
 Https proxy Tunnel with planka = endless planka loading screen 
