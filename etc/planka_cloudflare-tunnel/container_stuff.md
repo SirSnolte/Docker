@@ -14,7 +14,6 @@ Dont put any port in this Stack, the default service port is 1337
 
 ```
 version: '3'
-
 services:
   planka:
     image: ghcr.io/plankanban/planka:latest
@@ -30,17 +29,13 @@ services:
       - user-avatars:/app/public/user-avatars
       - project-background-images:/app/public/project-background-images
       - attachments:/app/private/attachments
-
-
     environment:
       - BASE_URL=https://planka.ampera.dev
       - TRUST_PROXY=1
       - DATABASE_URL=postgresql://postgres@postgres/planka
       - SECRET_KEY=3cfb3b8c1c472654267bdf29d294af2066aad57f8e7540662ca9ec6ac468bc152fac640caf03d9cc40a76185e4a2d8357c609b6de1871b2303b834b25653375a
-
     depends_on:
       - postgres
-
   postgres:
     image: postgres:alpine
     restart: unless-stopped
@@ -49,7 +44,6 @@ services:
     environment:
       - POSTGRES_DB=planka
       - POSTGRES_HOST_AUTH_METHOD=trust
-
 volumes:
   user-avatars:
   project-background-images:
@@ -63,7 +57,7 @@ Now deploy this type of code
 
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared.
 
 Login with: demo@demo.demo:demo
 
@@ -92,14 +86,12 @@ services:
       - DB_PORT=DB_PORT #optional
     volumes:
       - /path/to/appdata/config:/config
-    ports:
-      - 81:80
-    restart: unless-stopped
+    restart: always
 ```
 
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.5 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.5 linked in Cloudflared.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -120,14 +112,11 @@ services:
       - TZ=Europe/London
     volumes:
       - /path/to/appdata/config>:/config
-    ports:
-      - 80:80
-      - 443:443
-    restart: unless-stopped
+    restart: always
 ```
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared and Planka Stack.
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
