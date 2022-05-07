@@ -10,7 +10,7 @@ openssl rand -hex 64
 ```
 Copy that and replace in this Stack:
 Also make sure you set your BASE_URL right.
-Dont put any port in this Stack, the default is 1337
+Dont put any port in this Stack, the default service port is 1337
 
 ```
 version: '3'
@@ -59,22 +59,14 @@ volumes:
 
 Now deploy this type of code
 
-Login with: demo@demo.demo:demo
 
 
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared and Planka Stack.
 
-Http ERROR
-Https proxy Tunnel with planka = endless planka loading screen 
+Login with: demo@demo.demo:demo
 
-reasons:
-- secret_key: hex 64 hash?
-- allow_proxy: 0/1?
-- no cloudflare ssl certificates installed?
-
-more coming soon 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### LibreSpeed 
@@ -109,7 +101,7 @@ Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your C
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.5 linked in Cloudflared and Planka Stack.
 
-Works Fine
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -137,7 +129,7 @@ Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your C
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared and Planka Stack.
 
-Works Fine
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
