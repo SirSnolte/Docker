@@ -129,16 +129,17 @@ sudo systemctl reboot
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Cloudflare change your Domain nameserver *free SSL+DDOS-Protection*
+#### For now you can´t set an argo tunnel on portainer. 
 
-First of all you need to transfer your domain lighty to Cloudflare.com but only your name.server take effect. 
-Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow there instructions.
+First of all you need to transfer your domain lighty to Cloudflare.com, only your name.server take effect. 
+Create an [Cloudflare.com](https://dash.cloudflare.com/sign-up/teams) account verify your email adress and add your domain there, follow their instructions.
   
 
 ### Docker Cloudflare Zero Trust Tunnel (free to use but credit card needed)
-If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel, but easy via gui.
+If its ready, go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARGO Tunnel, but easy via gui.
 ![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare_zerotrust.png)
 
-For now you cant set an argo tunnel on portainer. 
+
 There we can generate Docker code by creating a new Tunnel. Just copy and run in your Terminal.
 It works perfectly fine with Planka: - [Planka Guide](https://github.com/SirSnolte/Docker/blob/main/etc/planka_cloudflare-tunnel/install_planka_with_cloudflare_tunnel_SSL-approved.md)
 
