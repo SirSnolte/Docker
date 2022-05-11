@@ -55,7 +55,7 @@ volumes:
 Now deploy this type of code and go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared.
-
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare.jpg)
 
 
 Login with: demo@demo.demo:demo
@@ -91,7 +91,7 @@ services:
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.5 linked in Cloudflared.
-
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare.jpg)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -116,7 +116,7 @@ services:
 Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared.
-
+![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare.jpg)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
