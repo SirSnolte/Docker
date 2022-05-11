@@ -1,4 +1,5 @@
 # Installation of Planka, Heimdall and LibreSpeed with approved SSL-Certificate by Cloudflare Tunnel 
+## Only working with Argo Tunnel!
 Befor you can doing this, you need to complete the first Guide: [Main Guid](https://github.com/SirSnolte/Docker/blob/main/README.md) already done? Go a head.
 
 ### Planka
@@ -30,10 +31,10 @@ services:
       - project-background-images:/app/public/project-background-images
       - attachments:/app/private/attachments
     environment:
-      - BASE_URL=https://planka.ampera.dev
+      - BASE_URL=https://planka.yourdomain.com
       - TRUST_PROXY=1
       - DATABASE_URL=postgresql://postgres@postgres/planka
-      - SECRET_KEY=3cfb3b8c1c472654267bdf29d294af2066aad57f8e7540662ca9ec6ac468bc152fac640caf03d9cc40a76185e4a2d8357c609b6de1871b2303b834b25653375a
+      - SECRET_KEY=3clb3b8c1c4726542675df29d294af2066aad57f8e7544542ca9ec6ac468bc152fac640caf03d9cc40a76185e4a2d8357c659b6de1871b2303b834b25653375a
     depends_on:
       - postgres
   postgres:
@@ -51,13 +52,11 @@ volumes:
   db-data:
 ```
 
-Now deploy this type of code
-
-
-
-Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
+Now deploy this type of code and go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
 Create a Network and add your tunnel in it.
 Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.3:1337 linked in Cloudflared.
+
+
 
 Login with: demo@demo.demo:demo
 
