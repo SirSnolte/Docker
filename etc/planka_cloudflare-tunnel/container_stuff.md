@@ -121,6 +121,40 @@ Also make sure to link your container to your new network and link your tunnel v
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+####WordPress Divi Stack
+
+
+```
+version: '3.3'
+
+services:
+
+  mariadb:
+    image: 'mariadb:10.4.8'
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+      DATADIR: /data
+    restart: on-failure
+    volumes:
+      - 'database:/data'
+    network_mode: 'service:wordpress'
+
+  wordpress:
+    image: 'elegantthemes/divi-dev'
+    hostname: divi-dev
+    volumes:
+      - '${PWD}:/workspace/wordpress'
+    ports:
+      - '80:80'     # nginx
+      - '3306:3306' # mariadb
+      - '3000:3000' # webpack hmr
+
+volumes:
+  database: {}
+```
+
+
 #### Jitsi
 
 ```
@@ -144,7 +178,8 @@ apt update ; apt install -y build-essential net-tools curl git software-properti
 - [PlankaGitHub_DockerCompose-yml](https://github.com/plankanban/planka/blob/master/docker-compose.yml)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) 
 - [Cloudflare](https://dash.cloudflare.com/)
-- [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
+- [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)https://github.com/elegantthemes/docker/tree/master/stacks/divi-dev
+- [WordPress_Divi](https://hub.docker.com/r/cloudflare/cloudflared](https://github.com/elegantthemes/docker/tree/master/stacks/divi-dev)
 
 ## Other things to explore
 - [Basic Guide](https://github.com/SirSnolte/Docker/blob/main/README.md)
