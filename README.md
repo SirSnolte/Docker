@@ -2,8 +2,6 @@
 ### Basic instructions *Something for Debian*
 
 
-# THIS GUIDE IS IN WORK NOT READY 
-
 If you are starting a project from scratch you will need Debian 10 or something like this to get all these stuff working.
 For VServer we prefere a fresh clean Debian 10 like in this guide.
 
