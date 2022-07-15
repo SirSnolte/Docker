@@ -121,37 +121,54 @@ Also make sure to link your container to your new network and link your tunnel v
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-####WordPress Divi Stack
+#### WordPress PHP mysql - Stack
 
 
 ```
-version: '3.3'
-
+version: '2'
 services:
-
-  mariadb:
-    image: 'mariadb:10.4.8'
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: wordpress
-      DATADIR: /data
-    restart: on-failure
-    volumes:
-      - 'database:/data'
-    network_mode: 'service:wordpress'
-
   wordpress:
-    image: 'elegantthemes/divi-dev'
-    hostname: divi-dev
-    volumes:
-      - '${PWD}:/workspace/wordpress'
+    depends_on:
+      - db
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306      
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin
+      WORDPRESS_DB_NAME: wordpress
     ports:
-      - '80:80'     # nginx
-      - '3306:3306' # mariadb
-      - '3000:3000' # webpack hmr
-
+      - 8082:80
+    networks:
+      - myNetwork
+  db:
+    image: mysql
+    restart: always
+    volumes:
+      - ./database:/var/lib/mysql    
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    networks:
+      - myNetwork
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8083:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: admin
+    networks:
+      - myNetwork
+networks:
+  myNetwork:
 volumes:
-  database: {}
+  database:
 ```
 
 
