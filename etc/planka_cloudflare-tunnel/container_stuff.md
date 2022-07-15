@@ -170,8 +170,19 @@ networks:
 volumes:
   database:
 ```
+Place this in your Container Consol in .httaccess
 
+```
+apt-get update
+apt-get install nano
+```
 
+```
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value max_input_time 300
+```
 #### Jitsi
 
 ```
