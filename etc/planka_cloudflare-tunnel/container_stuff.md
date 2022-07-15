@@ -195,8 +195,10 @@ apt update ; apt install -y build-essential net-tools curl git software-properti
 - [PlankaGitHub_DockerCompose-yml](https://github.com/plankanban/planka/blob/master/docker-compose.yml)
 - [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) 
 - [Cloudflare](https://dash.cloudflare.com/)
-- [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)https://github.com/elegantthemes/docker/tree/master/stacks/divi-dev
-- [WordPress_Divi](https://hub.docker.com/r/cloudflare/cloudflared](https://github.com/elegantthemes/docker/tree/master/stacks/divi-dev)
+- [Cloudflared_DOCKER_HUB](https://hub.docker.com/r/cloudflare/cloudflared)
+- [WordPress_php mysql](https://gist.github.com/bradtraversy/faa8de544c62eef3f31de406982f1d42?permalink_comment_id=4148371#gistcomment-4148371)
+
+
 
 ## Other things to explore
 - [Basic Guide](https://github.com/SirSnolte/Docker/blob/main/README.md)
