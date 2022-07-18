@@ -183,12 +183,17 @@ php_value post_max_size 64M
 php_value max_execution_time 300
 php_value max_input_time 300
 ```
-#### Jitsi
+
+ ```
+ls -a
+ ```
+#### Jitsi not working
 
 ```
 sudo apt-get update
  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
  ```
+
 
 https://docs.docker.com/engine/install/debian/
 
