@@ -138,10 +138,14 @@ services:
 volumes:
   linkin-data:
 ```
-Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui.
+after successfully deploying visit youdomain/admin to view admin login
+use default login credentials
+username = admin
+password = linkin123
+
+Go to [Cloudflare Zero Trust](https://dash.teams.cloudflare.com/) and set your Cloudflare.com ARG Tunnel but easy via gui. (Remove Ports in Stack and bind Argo Tunnel ip witch port 3000. In my case: 172.20.0.8:3000)
 Create a Network and add your tunnel in it.
-Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. In my case: http://172.20.0.6 linked in Cloudflared.
-![alt text](https://github.com/SirSnolte/Docker/blob/main/etc/images/cloudflare.jpg)
+Also make sure to link your container to your new network and link your tunnel via Cloudflare Gui to your local container ip:port. 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
