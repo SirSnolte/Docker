@@ -95,7 +95,7 @@ Also make sure to link your container to your new network and link your tunnel v
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### LinkIn ![alt text](https://github.com/RizkyRajitha/linkin/blob/master/docker-compose.yml)
+### LinkIn [Please leave a tip:](https://github.com/RizkyRajitha/linkin/blob/master/docker-compose.yml)
 
 ```
 version: "3"
