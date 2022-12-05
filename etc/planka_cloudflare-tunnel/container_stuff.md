@@ -223,7 +223,7 @@ networks:
 volumes:
   database:
 ```
-Place this in your Container Consol in .htaccess
+Place this in your Container Consol in .htaccess or add [THIS PLUGIN](https://de.wordpress.org/plugins/htaccess-file-editor/) and add theses lines there
 
 ```
 apt-get update
