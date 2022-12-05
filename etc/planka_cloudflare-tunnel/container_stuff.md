@@ -223,7 +223,7 @@ networks:
 volumes:
   database:
 ```
-Place this in your Container Consol in .httaccess
+Place this in your Container Consol in .htaccess
 
 ```
 apt-get update
